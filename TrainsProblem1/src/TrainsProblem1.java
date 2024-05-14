@@ -34,13 +34,13 @@ public class TrainsProblem1 {
 		}
 		
 		
-		int rutasConPradasExactas = grafo.rutasConMaxParadas('C', 'C', 3);
+		int rutasConMaximasParadas = grafo.rutasConMaxParadas('C', 'C', 3);
 		
-		System.out.println("Number of trips starting at A and ending at C with exactly 4 stops: " + rutasConPradasExactas);
+		System.out.println("C - C Rutas con maximo 3 paradas : " + rutasConMaximasParadas);
 		
-		int rutasConMaximasParadas = grafo.rutasConParadasFijas('A', 'C', 4);
+		int rutasConPradasExactas = grafo.rutasConParadasFijas('A', 'C', 4);
 		
-		System.out.println("Number of trips starting at C and ending at C with a maximum of 3 stops: " + rutasConMaximasParadas);
+		System.out.println( " A -C Ruta con exactamente 4 paradas: "+ rutasConPradasExactas);
 		
 		
 		int rutaCorta = grafo.rutaCorta('A', 'C');
